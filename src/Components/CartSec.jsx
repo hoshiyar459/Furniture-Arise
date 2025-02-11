@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const productList = [
 	{
@@ -35,7 +36,8 @@ const productList = [
 ];
 
 const SideBar = () => {
-
+	
+	const Navigate = useNavigate() ;
 
 	return (
 		<div className="bg-green-100  rounded-xl flex flex-col gap-6 p-4 md:p-6">
@@ -63,13 +65,15 @@ const SideBar = () => {
 				</div>
 			</div>
 			<div className="">
-				<button className="w-full bg-green-600 rounded-md text-white hover:bg-opacity-90 py-2.5">
-					BUY (13)
+				<button className="w-full bg-green-600 rounded-md text-white hover:bg-opacity-90 py-2.5" onClick={()=>{Navigate('/checkout')}}>
+				     Checkout
 				</button>
 			</div>
 		</div>
 	);
 };
+
+
 
 const QtyField = ({ name, value, onChange }) => {
 	const qtyControl = (qty) =>
@@ -99,7 +103,7 @@ const QtyField = ({ name, value, onChange }) => {
 			<button
 				className="px-4 py-1 inline-flex justify-center border-l  text-green-600  hover:bg-opacity-10"
 				type="button"
-				onClick={() => qtyControl(parseInt(value) + 1)}
+				onClick={() => qtyControl(parseInt(value) + 1) }
 			>
 				+
 			</button>
@@ -114,6 +118,8 @@ QtyField.propTypes = {
 };
 
 const ProductItem = ({ item, index, onChange }) => {
+	 const [ProductPrice, setProductPrice] = useState(item.price )
+	 
 	return (
 		<div className="bg-green-50  rounded-xl flex flex-col md:flex-row items-start gap-2 p-2 md:p-6 mb-4">
 			{/* <!-- image --> */}
@@ -135,7 +141,7 @@ const ProductItem = ({ item, index, onChange }) => {
 					</div>
 					<div>
 						<h3 className="text-xl font-bold text-green-600">
-							Rs. {item.price}
+							Rs. {ProductPrice }
 						</h3>
 						<QtyField
 							name={`ezy__epcart1-qty-${index}`}
@@ -163,7 +169,7 @@ ProductItem.propTypes = {
 
 const CartSec = () => {
 	const [products, setProducts] = useState([...productList]);
-	const [Price, setPrice] = useState(0)
+	
 
 	const onChange = (e, index) => {
 		const { value } = e.target;

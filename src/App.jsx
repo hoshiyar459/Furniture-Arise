@@ -5,6 +5,7 @@ import Contact from './Pages/Contact'
 import {  Routes, Route } from "react-router";
 import Shop from './Pages/Shop';
 import Cart from './Pages/Cart';
+import Checkout from './Pages/Checkout';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
          <Route path="/contact" element={<Contact />} />
          <Route path="/shop" element={<Shop />} />
          <Route path="/cart" element={<Cart />} />
+         <Route path="/checkout" element={<Checkout />} />
          </Routes>
   
     </div>
