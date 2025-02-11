@@ -23,7 +23,7 @@ export const Header = () => {
             </button>
            <div className='flex gap-4 '>
             <a href="#" className=' text-green-500 text-2xl '><RiAccountCircleLine /></a>
-            <a href="#" className=' text-green-500 text-2xl '><FiShoppingCart /></a>
+            <a href="/cart" className=' text-green-500 text-2xl '><FiShoppingCart /></a>
             </div>
             
           </div>
@@ -33,10 +33,10 @@ export const Header = () => {
                 <a href="/" class="block py-2 px-3 text-white bg-[#3b5d50] rounded-sm md:bg-transparent md:text-[#3b5d50] md:p-0 md:nulltext-blue-500" aria-current="page">Home</a>
               </li>
               <li>
-                <a href="/about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#3b5d50] md:p-0 md:nullhover:text-blue-500 nulltext-white nullhover:bg-gray-700 nullhover:text-white md:nullhover:bg-transparent nullborder-gray-700">About</a>
+                <a href="/shop" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#3b5d50] md:p-0 md:nullhover:text-blue-500 nulltext-white nullhover:bg-gray-700 nullhover:text-white md:nullhover:bg-transparent nullborder-gray-700">Shop</a>
               </li>
               <li>
-                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#3b5d50] md:p-0 md:nullhover:text-blue-500 nulltext-white nullhover:bg-gray-700 nullhover:text-white md:nullhover:bg-transparent nullborder-gray-700">Services</a>
+                <a href="/about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#3b5d50] md:p-0 md:nullhover:text-blue-500 nulltext-white nullhover:bg-gray-700 nullhover:text-white md:nullhover:bg-transparent nullborder-gray-700">About</a>
               </li>
               <li>
                 <a href="/contact" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#3b5d50] md:p-0 md:nullhover:text-blue-500 nulltext-white nullhover:bg-gray-700 nullhover:text-white md:nullhover:bg-transparent nullborder-gray-700">Contact</a>
