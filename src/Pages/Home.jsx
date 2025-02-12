@@ -6,6 +6,7 @@ import Blog from '../Components/Blog'
 import Testimonial from '../Components/Testimonial'
 import Footer from '../Components/Footer'
 import HomeProduct from '../Components/HomeProduct'
+import ProductSec from '../Components/ProductsForSale'
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <Testimonial></Testimonial>
         <Blog></Blog>
         <Footer></Footer>
+
     </div>
   )
 }

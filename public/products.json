@@ -1,0 +1,61 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "img":"/1.png",
+            "title": "Luxury Full Body Massage Chair with Bluetooth",
+            "price": "4999.00",
+            "rating": "4.8"
+        },
+        {
+            "id": "2",
+            "img": "/2.png",
+            "title": "Modern L-Shaped Fabric Sofa Set",
+            "price": "7999.00",
+            "rating": "4.9"
+        },
+        {
+            "id": "3",
+            "img": "https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZ1cm5pdHVyZXxlbnwwfHwwfHx8MA%3D%3D",
+            "title": "Classic Velvet 3-Seater Sofa",
+            "price": "5999.00",
+            "rating": "4.7"
+        },
+        {
+            "id": "4",
+            "img": "/7.png",
+            "title": "Wooden Dining Table Set for 6",
+            "price": "2999.00",
+            "rating": "4.5"
+        },
+        {
+            "id": "5",
+            "img": "/5-removebg-preview.png",
+            "title": "King Size Wooden Bed Frame",
+            "price": "8999.00",
+            "rating": "4.6"
+        },
+        {
+            "id": "6",
+            "img": "/6.png",
+            "title": "Modern Upholstered Bed with Storage",
+            "price": "9499.00",
+            "rating": "4.7"
+        },
+        {
+            "id": "7",
+            "img": "/7.png",
+            "title": "Minimalist Wooden Office Desk",
+            "price": "1299.00",
+            "rating": "4.4"
+        },
+        {
+            "id": "8",
+            "img": "/8.png",
+            "title": "Ergonomic Office Chair with Mesh Back",
+            "price": "999.00",
+            "rating": "4.5"
+        }
+     
+    ]
+}

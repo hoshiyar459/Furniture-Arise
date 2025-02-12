@@ -47,7 +47,7 @@ const inputs = [
 ];
 
 const products = [
-	{ id: 1, name: "How to Improve Your Personal Skills (PDF)", price: 15.0 },
+	{ id: 1, name: "Your Purchase", price: 15.0 },
 	// { id: 2, name: "Product 2", price: 20 },
 	// { id: 3, name: "Product 3", price: 30 },
 ];
@@ -184,28 +184,11 @@ const Payment = ({ products }) => {
 			</div>
 			<div className="bg-gray-100  p-4 lg:p-6 mt-12">
 				<form>
-					<h6 className="font-medium">Paypal</h6>
 					<div className="flex items-center my-4">
 						<input className="h-4 w-4 mr-3" type="radio" />
-						<Shape />
+						{/* <Shape /> */} Cash On Delhivary
 					</div>
-					<h6 className="font-medium">Debit or Credit Card</h6>
-					<div className="flex items-center my-4">
-						<input className="h-4 w-4 mr-3" type="radio" checked />
-						<img
-							src="https://cdn.easyfrontend.com/pictures/Debit%20or%20Credit.png"
-							alt=""
-							className="max-w-full h-auto"
-						/>
-					</div>
-
-					<div className="my-8">
-						<input className="form-check-input" type="checkbox" value="" />
-						<label className="font-medium">
-							{" "}
-							I have read and agree to the website terms and conditions *
-						</label>
-					</div>
+		
 					<button className="text-white bg-blue-600 hover:bg-opacity-90 p-4 px-9 flex justify-center items-center leading-none h-full rounded-md w-full">
 						Pay Now
 					</button>

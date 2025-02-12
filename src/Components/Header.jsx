@@ -23,7 +23,7 @@ export const Header = () => {
             </button>
            <div className='flex gap-4 '>
             <a href="#" className=' text-green-500 text-2xl '><RiAccountCircleLine /></a>
-            <a href="/cart" className=' text-green-500 text-2xl '><FiShoppingCart /></a>
+            <a href="/cart/1" className=' text-green-500 text-2xl '><FiShoppingCart /></a>
             </div>
             
           </div>
