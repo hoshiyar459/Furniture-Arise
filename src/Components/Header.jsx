@@ -16,14 +16,14 @@ export const Header = () => {
           </a>
           <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">  
             <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 nulltext-gray-400 nullhover:bg-gray-700 nullfocus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <svg className="w-4 h-4 text-green-400 border-green-400 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
               </svg>
              
             </button>
            <div className='flex gap-4 '>
-            <a href="#" className=' text-green-500 text-2xl '><RiAccountCircleLine /></a>
-            <a href="/cart/1" className=' text-green-500 text-2xl '><FiShoppingCart /></a>
+            <a href="#" className=' text-green-500 text-2xl hidden md:block '><RiAccountCircleLine /></a>
+            <a href="/cart/1" className=' text-green-500 text-2xl pr-4 mt-2  md:pr-0 md:mt-0'><FiShoppingCart /></a>
             </div>
             
           </div>
