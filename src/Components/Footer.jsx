@@ -1,6 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
-    return (
+   
+  return (
       <footer className=" text-gray-800 py-16 mt-10 flex flex-col items-center">
+   
    
   
         <div className="container mx-auto px-6 md:px-12 ">
@@ -48,8 +52,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <p className="opacity-75"> Arise &copy; CopyRight All rights reserved.</p>
             <ul className="flex space-x-4 mt-4 md:mt-0">
-              <li><a href="/policy" className="opacity-75 hover:opacity-100">Privacy Policy</a></li>
-              <li><a href="/terms" className="opacity-75 hover:opacity-100">Terms & Conditions</a></li>
+              <li><Link to="/policy" className="opacity-75 hover:opacity-100">Privacy Policy</Link></li>
+              <li><Link to="/terms" className="opacity-75 hover:opacity-100">Terms & Conditions</Link></li>
             </ul>
           </div>
         </div>

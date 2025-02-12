@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const inputs = [
 	{
@@ -189,9 +190,9 @@ const Payment = ({ products }) => {
 						{/* <Shape /> */} Cash On Delhivary
 					</div>
 		
-					<button className="text-white bg-blue-600 hover:bg-opacity-90 p-4 px-9 flex justify-center items-center leading-none h-full rounded-md w-full">
+					<Link to="/conform" className="text-white bg-blue-600 hover:bg-opacity-90 p-4 px-9 flex justify-center items-center leading-none h-full rounded-md w-full">
 						Pay Now
-					</button>
+					</Link>
 				</form>
 			</div>
 		</div>
