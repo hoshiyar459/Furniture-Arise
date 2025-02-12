@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -17,8 +18,8 @@ const Hero = (props) => {
                             Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
 							</p>
 							<div>
-								<a href="#!" className="text-lg py-3 px-5  bg-[#f9bf29] text-black shadow rounded-4xl mr-3">Shop Now</a>
-                                <a href="#!" className="text-lg py-3 px-7  bg-[#3b5d50] shadow rounded-3xl border-white border-1">Explore</a>
+								<Link to="/shop" className="text-lg py-3 px-5  bg-[#f9bf29] text-black shadow rounded-4xl mr-3">Shop Now</Link>
+                                <a href="#" className="text-lg py-3 px-7  bg-[#3b5d50] shadow rounded-3xl border-white border-1">Explore</a>
 							</div>
 						</div>
 					</div>
