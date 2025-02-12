@@ -169,7 +169,7 @@ const Payment = ({ products }) => {
 								<h6 className="font-medium">{product.name}</h6>
 							</div>
 							<div className="col-span-1">
-								<h6 className="font-medium">£{product.price.toFixed(2)}</h6>
+								<h6 className="font-medium">${product.price.toFixed(2)}</h6>
 							</div>
 						</React.Fragment>
 					))}
@@ -179,7 +179,7 @@ const Payment = ({ products }) => {
 						<h6 className="font-medium">Total</h6>
 					</div>
 					<div className="col-span-1">
-						<h6 className="font-medium">£{calculateTotal()}</h6>
+						<h6 className="font-medium">${calculateTotal()}</h6>
 					</div>
 				</div>
 			</div>

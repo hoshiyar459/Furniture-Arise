@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
    
   return (
-      <footer className=" text-gray-800 py-16 mt-10 flex flex-col items-center">
+      <footer className=" bg-gray-200 text-gray-800 py-16 mt-10 flex flex-col items-center">
    
    
   
@@ -11,20 +11,27 @@ const Footer = () => {
           <div className="flex justify-between flex-wrap">
 
             <div className="md:w-[30rem] pb-4">
-              <h2 className="font-bold text-2xl text-[#3b5d50]">Arise.</h2>
+              <h2 className="font-bold text-2xl text-green-500">Arise.</h2>
               <p className="opacity-75 mt-4">
               Hull Rd	York North Yorkshire YO19 5LP Country United Kingdom
               	01904 481898	
+              </p>
+              <p className="opacity-75 mt-4">
+              <p className="opacity-75 mt-4">	4/213 Miller St	Sydney New South Wales
+              	Australia <br />
+	1300 880 610
+
+              </p>
               </p>
             </div>
 
             <div>
               <h5 className="font-semibold grid-cols-4">Quick Links</h5>
               <ul className="space-y-2">
-                <li><a href="/" className="opacity-75 hover:opacity-100">Home</a></li>
-                <li><a href="/shop" className="opacity-75 hover:opacity-100">Shop</a></li>
-                <li><a href="/about" className="opacity-75 hover:opacity-100">About</a></li>
-                <li><a href="/contact" className="opacity-75 hover:opacity-100">Contact</a></li>
+                <li><Link to="/" className="opacity-75 hover:opacity-100">Home</Link></li>
+                <li><Link to="/shop" className="opacity-75 hover:opacity-100">Shop</Link></li>
+                <li><Link to="/about" className="opacity-75 hover:opacity-100">About</Link></li>
+                <li><Link to="/contact" className="opacity-75 hover:opacity-100">Contact</Link></li>
               </ul>
             </div>
 
@@ -35,7 +42,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="mailto:contact@easyfrontend.com" className="opacity-75 hover:opacity-100">
-                    contact@Arise.com
+                    customer@arise.com
                   </a>
                 </li>
                 <li>

@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate, useNavigation } from "react-router-dom";
+import { Link, useNavigate, useNavigation } from "react-router-dom";
+
 
 const items = [
 	{
@@ -75,9 +76,9 @@ const CategoryItem = ({ item, index }) => (
 							</div>
 							<h5 className="text-[20px] font-bold mb-2">{item.price}</h5>
 							<div className="flex md:justify-end mt-4">
-								<a  href="/shop" className="py-2 px-5 text-base leading-none text-white bg-[#3b5d50] hover:bg-opacity-90 rounded-full font-bold" >
+								<Link  to="/shop" className="py-2 px-5 text-base leading-none text-white bg-[#3b5d50] hover:bg-opacity-90 rounded-full font-bold" >
 									Shop Now
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>

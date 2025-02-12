@@ -47,7 +47,7 @@ export const Header = () => {
             }`}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col md:flex-row md:space-x-8 p-4 md:p-0 mt-4 md:mt-0 font-medium border border-gray-100 rounded-lg bg-gray-50 md:border-0 md:bg-white">
+            <ul className="flex flex-col items-center md:flex-row md:space-x-8 p-4 md:p-0 mt-4 md:mt-0 font-medium border border-gray-100 rounded-lg bg-gray-50 md:border-0 md:bg-white">
               <li>
                 <Link to="/" className="block py-2 px-3 md:text-[#3b5d50] md:p-0">
                   Home
@@ -80,7 +80,7 @@ export const Header = () => {
               <li>
               <Link to="/cart/1" className="text-green-500 text-2xl">
               <FiShoppingCart />
-            </Link>
+              </Link>
             </li>
             </ul>
           </div>
