@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate, useNavigation } from "react-router-dom";
 
 const items = [
 	{
@@ -25,6 +26,7 @@ const items = [
 ];
 
 const CategoryItem = ({ item, index }) => (
+	
 	<div className="col-span-2 md:col-span-1">
 		<a href="#!">
 			<div className="bg-white text-black  rounded-md relative p-6">
@@ -73,9 +75,9 @@ const CategoryItem = ({ item, index }) => (
 							</div>
 							<h5 className="text-[20px] font-bold mb-2">{item.price}</h5>
 							<div className="flex md:justify-end mt-4">
-								<button className="py-2 px-5 text-base leading-none text-white bg-[#3b5d50] hover:bg-opacity-90 rounded-full font-bold">
+								<a  href="/shop" className="py-2 px-5 text-base leading-none text-white bg-[#3b5d50] hover:bg-opacity-90 rounded-full font-bold" >
 									Shop Now
-								</button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -91,6 +93,7 @@ CategoryItem.propTypes = {
 };
 
 const HomeProduct= () => {
+	  
 	return (
 		<section className="py-14 md:py-24 bg-white text-zinc-900  relative overflow-hidden z-10">
 			<div className="container px-4 mx-auto">
