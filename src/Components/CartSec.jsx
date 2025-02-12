@@ -140,7 +140,7 @@ const ProductItem = ({ item, index, onChange, onRemove }) => {
           <div className="text-base md:text-lg hover:text-green-600 mb-4">
             {item.title}
           </div>
-          <h3 className="text-xl font-bold text-green-600">Rs. {item.price}</h3>
+          <h3 className="text-xl font-bold text-green-600">$. {item.price}</h3>
 
           <input
             type="number"
