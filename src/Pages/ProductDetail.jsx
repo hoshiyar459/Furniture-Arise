@@ -71,7 +71,7 @@ const ProductDetail = () => {
 						{/* ✅ Remove rateCount if not present in JSON */}
 						{/* <span>{product.rateCount} Reviews</span> */}
 					</p>
-					<h3 className="text-2xl text-green-600 font-medium">Rs. {product.price}</h3>
+					<h3 className="text-2xl text-green-600 font-medium">$ {product.price}</h3>
 					<div className="flex gap-4 w-full mt-7">
 						<button className="bg-green-600 text-white px-10 py-2.5 rounded uppercase" onClick={()=> {Navigate('/checkout')}}>Buy Now</button>
 						<button className="border border-green-600 text-green-600 px-6 py-2.5 rounded uppercase" onClick={() => Navigate(`/cart/${id}`)}>
